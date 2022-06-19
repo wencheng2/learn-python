@@ -1,18 +1,18 @@
-#magic8.py
-#This is a Magic 8-Ball program that answers and "Yes" or "No" question with a different fortune
+# magic8.py
+# This is a Magic 8-Ball program that answers and "Yes" or "No" question with a different fortune
 
-#Import module
+# Import module
 import random
 
-#Set up variables
+# Set up variables
 name = input("Your name: ")
 ques = input("Your question: ")
 ans = ""
 
-#Create random number variable
+# Create random number variable
 random_num = random.randint(1,9)
 
-#Generate response to question
+# Generate response to question
 if random_num == 1:
   ans = "Yes - definitely."
 elif random_num == 2:
@@ -34,10 +34,10 @@ elif random_num == 9:
 else:
   ans = "Error"
 
-#Check question was asked
+# Check question was asked
 if len(ques) == 0:
     print("The Magic 8-Ball cannot provide a fortune unless you ask it something")
-#Output on terminal
+# Output on terminal
 elif name == "":
   print("You asked: " + ques)
 else:
